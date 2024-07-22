@@ -48,7 +48,7 @@ $(MLX):
 	fi
 
 $(NAME): $(OBJ_PATH) $(MLX) $(OBJS)
-	$(CC) $(CFLAGS) $(OBJS) -Linclude/.mlx_linux -lmlx -lXext -lX11 -lm -lz -o $(NAME)
+	$(CC) $(CFLAGS) $(OBJS) -L.mlx_linux -lmlx -lXext -lX11 -lm -lz -o $(NAME)
 
 clean:
 	rm -rf $(OBJ_PATH)
